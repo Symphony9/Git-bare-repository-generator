@@ -18,7 +18,17 @@ The file should be writable, so you need to make the file executable
 ```
 chmod +x genhook.sh
 ```
-Now that the file is executable, we should run it with a parameter that will name the bare repo folder
+Now that the file is executable, we should run it with a parameter that will name the bare repo folder. E.g.:
 ```
 ./genhook.sh stage
 ```
+Proceed with filling out what the script asks for you. By the end you should receive how the remote for git looks like. You'll get something like:
+```
+[remote "stage"]
+        url = ssh://user@your-fancy-domain.tld/usr/share/nginx/html/stage/private/stage.git
+```
+To start with deploying from your localhost you can safely open git config in your local project and add the outputted lines. You can find the config at:
+```
+.git/config
+```
+Usually just add it by the end of the config file on a new line.
