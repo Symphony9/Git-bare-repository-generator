@@ -12,3 +12,13 @@ In this case you copy the genhook.sh to:
 ```
 /usr/share/nginx/html/yourproject/
 ```
+
+## Usage
+The file should be writable, so you need to make the file executable
+```
+chmod +x genhook.sh
+```
+Now that the file is executable, we should run it with a parameter that will name the bare repo folder
+```
+./genhook.sh stage
+```
