@@ -32,3 +32,6 @@ To start with deploying from your localhost you can safely open git config in yo
 .git/config
 ```
 Usually just add it by the end of the config file on a new line.
+
+## How to update hook which is being run after you deploy?
+Connect to your server, search for the bare repository folder, head to hooks and edit a file "post-update". Its basically bash, so you can add anything you want to do afterwards.
